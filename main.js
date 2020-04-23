@@ -71,10 +71,12 @@ const Student = (name, course, term = 1) => {
 const courseItem = document.createElement('new-course');
 const termItem =  document.createElement('new-term');
 const nameItem = document.createElement('new-grade-assignment');
+const studentInfo = document.createElement('student-info')
 
 courseItem.innerText = `Course: ${student.course}`;
 termItem.innerText = `Term: ${student.term}`;
 nameItem.innerText = `Name: ${student.name}`;
+studentInfo.innerText = `Student: ${student.name}`;
 
 studentInfo.classList.add('student-info');
 studentInfo.appendChild(courseItem);
